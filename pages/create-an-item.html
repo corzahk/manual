@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raices</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="contenedor contenido-header"></div>
+      <!-- contenedor-->
+    </header>
+    <h1 class="fw-300 centrar-texto">Cómo crear un artículo en Sistema Pos</h1>
+
+    <main class="contenedor contenido-centrado texto-entrada">
+      <p>Escrito el:<spam>04/2021</spam> por <spam> AngelDev</spam></p>
+
+      <p>
+        Para una empresa, como una tienda de ropa, la compra, venta y
+        seguimiento del flujo de existencias son realmente importantes.
+        Entonces, guardar elementos en Sistema POS es un paso obligatorio. Esta
+        función le ayuda a almacenar sus artículos, de modo que pueda usarse
+        para la venta, para suministro e incluso en informes. Para este
+        tutorial, veremos cómo crear, eliminar y editar un elemento en Sistema
+        POS. Además, veremos cómo agregar un elemento flash.
+      </p>
+      <div class="dropdown-divider"></div>
+      <h3>Cómo crear un artículo en Sistema POS</h3>
+      <p>
+        Para crear un artículo, debe acceder al panel de control, hacer clic en
+        el menú <b>"Inventario"</b> , aparecerá un menú desplegable, luego haga
+        clic en <b>"Add Producto"</b>.
+      </p>
+      <img
+        class="image-center"
+        src="/resources/Create-an-item-add-item-2.png"
+        alt="Crear nuevo item"
+      />
+      <p>
+        También puede agregar un elemento de la página
+        <b>"Lista Productos"</b> , simplemente haga clic en el botón
+        <b>"Añadir Productos"</b> .
+      </p>
+      <img
+        class="image-center"
+        src="/resources/Create-an-item-add-item-1.png"
+        alt="Crear nuevo item"
+      />
+      <p>
+        La página de creación de elementos tiene 4 pestañas, que tienen campos
+        donde algunos son obligatorios. Aquí están las pestañas disponibles:
+      </p>
+      <ol class="seccion">
+        <li>Identificacion</li>
+        <li>Inventario</li>
+        <li>Precio</li>
+        <li>Caracteristicas</li>
+      </ol>
+      <p>
+        Para este tutorial crearemos un artículo llamado: "Leggings con
+        cremallera de Moley" .
+      </p>
+      <img
+        class="image-center"
+        src="/resources/create-an-item-tabs-to-fill.png"
+        alt="Crear nuevo item"
+      />
+      <h4 style="color: rgb(18, 31, 102)">Pestaña: Identificación</h4>
+      <p>En esta pestaña, debe completar los siguientes campos obligatorios:</p>
+      <ol>
+        <li>Categoría: <b>“Leggings”</b>.</li>
+        <li>Nombre del artículo: <b>"Moley Zip Leggings"</b>.</li>
+        <li>
+          SKU (Stock Keeping Unit) que es un código de referencia único (número
+          + letra) para el artículo: <b>“LEGGINGS04”</b>.
+        </li>
+      </ol>
+      <p>
+        Es importante tener en cuenta que más de un artículo puede tener el
+        mismo SKU. Los otros campos son opcionales. Si desea saber
+        <a style="color: blue" href="#">
+          cómo crear categorías en Sistema Pos</a
+        >
+        , puede leer este tutorial.
+      </p>
+      <h4 style="color: rgb(18, 31, 102)">Pestaña: Inventario</h4>
+      <p>En esta pestaña, los campos obligatorios son:</p>
+      <ol>
+        <li>
+          El estado, aquí eliges si el producto está disponible para la venta o
+          no.
+        </li>
+        <li>El tipo de artículo define si el artículo es físico o digital.</li>
+        <li>
+          Y la <b>“Gestión de stock”</b>. Si está habilitado, el stock del
+          artículo se deducirá en cada venta.
+        </li>
+      </ol>
+      <img
+        class="image-center"
+        src="/resources/Create-an-item-inventory.png"
+        alt="Crear nuevo item"
+      />
+      <p>
+        En nuestro ejemplo, hicimos las siguientes elecciones:
+        <b>"En oferta"</b> para el artículo <b>"Estado"</b> ,
+        <b>"Artículo físico"</b> para el "tipo de artículo" y
+        <b>"Habilitado"</b> para la opción <b>"Gestión de existencias"</b>
+      </p>
+      <h4 style="color: rgb(18, 31, 102)">Pestaña: Precio</h4>
+      <p>
+        Esta pestaña contiene todos los campos relacionados con el valor
+        financiero del producto. También es posible gestionar el descuento, que
+        puede tener una fecha de inicio y una fecha de finalización. Si se
+        aplica un impuesto a un artículo, puede seleccionarlo y definir si el
+        impuesto es inclusivo o exclusivo. Para nuestro producto, el precio de
+        venta se establece en $ 17,99.
+      </p>
+      <img
+        class="image-center"
+        src="/resources/create-an-item-price.png"
+        alt="Crear nuevo item"
+      />
+      <h4 style="color: rgb(18, 31, 102)">Pestaña: Funciones</h4>
+      <p>
+        Aquí solo especificamos el color del producto: <b>“Negro”</b> . Pero
+        puede establecer otras características como "Peso", "Alto", "Ancho" y
+        "Descripción" dependiendo de la naturaleza de su artículo. También puede
+        descargar una imagen para ilustración. Esta imagen se mostrará en el POS
+        (Punto de venta). Una vez que haya terminado, puede usar los botones
+        disponibles en el árbol:
+      </p>
+      <ol>
+        <li>
+          Botón <b>"Guardar"</b> , que guarda el elemento y le permite continuar
+          con la entrada de datos.
+        </li>
+        <li>
+          Botón <b>"Guardar y volver a la lista"</b> , que guarda el elemento y
+          lo lleva de regreso a la lista de elementos.
+        </li>
+        <li>
+          Y el botón <b>"Cancelar"</b>, que restablece el formulario y lo lleva
+          a la lista de elementos.
+        </li>
+      </ol>
+      <img
+        class="image-center"
+        src="/resources/create-an-item-save.png"
+        alt="Crear nuevo item"
+      />
+      <p>
+        Al hacer clic en el botón <b>"Cancelar"</b> , debe confirmar su acción.
+      </p>
+      <img
+        class="image-center"
+        src="/resources/Create-an-item-cancel.png"
+        alt="Crear nuevo item"
+      />
+      <p>
+        Una vez en la <b>"Lista Productos"</b> , puede comprobar que el elemento
+        se ha guardado. Ingrese en la barra de búsqueda y haga clic en el botón
+        <b>"Buscar"</b> . Encontrarás el nuevo producto creado con todas sus
+        características
+      </p>
+      <img
+        class="image-center"
+        src="/resources/Create-an-item-check.png"
+        alt="Crear nuevo item"
+      />
+      <h4>Cómo eliminar un elemento en Sistema POS</h4>
+      <p>
+        Para eliminar un elemento, debe acceder a la lista de elementos que
+        muestra todos los elementos disponibles. Esta página le permite eliminar
+        elementos de 3 formas diferentes. Debe tener en cuenta que, para todos
+        estos casos, siempre tendrá que confirmar su acción
+      </p>
+      <p style="font-size: 2rem">Cómo eliminar elementos de forma masiva</p>
+      <p>
+        Hacer una selección simultánea de todos los elementos de la tabla
+        <b>(1)</b> a continuación, haga clic en
+        <b>“Eliminar seleccionados”</b> botón <b>(2)</b> . También tenga en
+        cuenta que puede mostrar más entradas en la tabla si desea eliminar más
+        elementos.
+      </p>
+      <img
+        class="image-center"
+        src="/resources/How-to-delete-an-item-1.png"
+        alt="Crear nuevo item"
+      />
+      <p style="font-size: 2rem">Cómo eliminar varios elementos</p>
+      <p>Aquí, puede eliminar uno o más elementos de la tabla.</p>
+      <img
+        class="image-center"
+        src="/resources/How-to-delete-an-item-2.png"
+        alt="Crear nuevo item"
+      />
+      <p style="font-size: 2rem">Cómo eliminar un solo elemento</p>
+      Al hacer clic en el botón <b>"Opciones"</b> en el extremo derecho de su
+      página, tiene la opción "<b>Eliminar elementos"</b> para eliminar un
+      elemento.
+      <img
+        class="image-center"
+        src="/resources/How-to-delete-an-item-3.png"
+        alt="Crear nuevo item"
+      />
+    </main>
+    <footer class="site-footer seccion">
+      <div class="contenedor contenedor-footer">
+        <nav class="navegacion">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="anuncios.html">Anuncios</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+        <p class="copyright">Todos los Derechos Reservados 2020 &copy</p>
+      </div>
+    </footer>
+  </body>
+</html>
